@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+:root{
+	--heightbilla: 300px;
+}
+
+
+
+.image{
+	width: 30%;
+	height: var(--heightbilla);
+	position: absolute;
+	padding: 2vw;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	float: left;
+    border-radius: 25px;
+}
+
+.image img{
+	width: 100%;
+	height: 100%;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+}
+
+.text{
+	width: 70%;
+	height: var(--heightbilla);
+	float: right;
+	font-family: 'Noto Sans JP', sans-serif;
+	border-radius: 25px;
+	padding: 30px 20px;
+	position: relative;
+}
+
+.text h1{
+	text-align: left;
+	font-size: 40px;
+	margin-bottom: 5px;
+
+}
+
+.text .p1{
+	text-align: left;
+	font-size: 25px;
+	margin-bottom: 15px;
+	color: black;
+	display: block;
+	font-weight: bold;
+}
+
+.text .p2{
+	text-align: left;
+	font-size: 25px;
+	margin-bottom: 15px;
+	color: blue;
+	display: block;
+	font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px){
+    :root{
+        --heightbilla: 150px;
+    }    
+
+    .boxform{
+        width: 45%;
+    }
+    
+
+    .boxform img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    } 
+
+    .text .p2{
+        text-align: left;
+        font-size: 10px;
+        margin-bottom: 10px;
+        color: blue;
+        display: block;
+        font-weight: bold;
+    }
+
+    .text .p1{
+        font-size: 8px;
+    }
+
+    .text h1{
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 5px;
+    
+    }
+
+    .text{
+        height: var(--heightbilla);
+        padding: 3px 2px;
+    }
+
+    .image{
+        height: var(--heightbilla);
+        
+    }
+}

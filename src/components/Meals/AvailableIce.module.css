@@ -1,0 +1,59 @@
+  
+.meals {
+  width: 100%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+	height: auto;
+	border-radius: 25px;
+	background-color: white;
+	color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cat{
+	width:  100%;
+	height: auto;
+	border-radius: 25px;
+	background-color: white;
+	color: black;
+	position: relative;
+  margin-bottom: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (max-width: 768px){
+
+  .meals ul {
+    width: 90%;    
+  }
+  .cat{    
+    margin-bottom: 40px;
+  }
+
+}
